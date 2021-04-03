@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -102,150 +101,6 @@ header nav .toggel-nav label div {
 }
 
 /*
-    ---- start Our courses ----
-*/
-.supTrack, .Architecture-track .contain .col-sm-12 h3, .power-track .contain .col-sm-12 h3, .software-track .contain .col-sm-12 h3, .embedded-2 .contain .col-sm-12 h3, .mechanical .contain .col-sm-12 h3, .embedded-1 .contain .col-sm-6 h3, .embedded-1 .contain .col-sm-12 h3 {
-  background: #EEC65A;
-  width: 200px;
-  min-width: 200px;
-  font-size: 20px;
-  margin: auto;
-  padding: 2px 15px;
-  padding-bottom: 2px;
-  border-radius: 5px;
-  line-height: 1.5;
-  padding-bottom: 7px;
-}
-
-.embedded, .Architecture-track, .power-track, .software-track, .embedded-2, .mechanical, .embedded-1 {
-  background-size: cover;
-  text-align: center;
-  border-bottom: 3px solid #EEC65A;
-  position: relative;
-}
-
-.overlay-track, .Architecture-track .overlay, .power-track .overlay, .software-track .overlay, .embedded-2 .overlay, .mechanical .overlay, .embedded-1 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  background-color: #21669fb3;
-}
-
-.track-ul, .Architecture-track .contain .col-sm-4 .content ul, .power-track .contain .col-sm-6 .content ul, .power-track .contain .col-sm-4 .content ul, .software-track .contain .col-sm-6 .content ul, .software-track .contain .col-sm-4 .content ul, .embedded-2 .contain .col-sm-6 .content ul, .mechanical .contain .col-sm-6 .content ul {
-  width: 190px;
-  min-width: 190px;
-  font-size: 16px;
-  margin: auto;
-  list-style: none;
-  background-color: #2277A7D8;
-  border-radius: 8px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.track-li, .Architecture-track .contain .col-sm-4 .content ul li, .power-track .contain .col-sm-6 .content ul li, .power-track .contain .col-sm-4 .content ul li, .software-track .contain .col-sm-6 .content ul li, .software-track .contain .col-sm-4 .content ul li, .embedded-2 .contain .col-sm-6 .content ul li, .mechanical .contain .col-sm-6 .content ul li {
-  padding: 7px;
-}
-
-.embedded-1 {
-  background-image: url("../images/ورش العمل.jpg");
-}
-.embedded-1 .contain {
-  position: relative;
-  z-index: 2;
-  direction: ltr;
-  padding: 100px 0px;
-  color: #fff;
-}
-.embedded-1 .contain .col-sm-6, .embedded-1 .contain .col-sm-12 {
-  margin-bottom: 80px;
-}
-.embedded-2, .mechanical {
-  background-image: url("../images/IMG_6238.jpg");
-}
-.embedded-2 .contain, .mechanical .contain {
-  position: relative;
-  z-index: 2;
-  direction: ltr;
-  padding: 100px 0px;
-  color: #fff;
-}
-.embedded-2 .contain .col-sm-6, .mechanical .contain .col-sm-6 {
-  margin-bottom: 80px;
-}
-.embedded-2 .contain .col-sm-6 .content ul li:first-child, .mechanical .contain .col-sm-6 .content ul li:first-child {
-  background-color: #2C96D1;
-  border-radius: 20px;
-}
-.embedded-2 .contain .col-sm-12, .mechanical .contain .col-sm-12 {
-  margin-bottom: 80px;
-}
-/* start power track */
-.power-track, .software-track {
-  background-image: url("../images/ورش العمل.jpg");
-}
-.power-track .contain, .software-track .contain {
-  position: relative;
-  z-index: 2;
-  direction: ltr;
-  padding: 100px 0px;
-  color: #fff;
-}
-.power-track .contain .col-sm-6, .power-track .contain .col-sm-4, .software-track .contain .col-sm-6, .software-track .contain .col-sm-4 {
-  margin-bottom: 80px;
-}
-.power-track .contain .col-sm-6 .content ul li:first-child, .power-track .contain .col-sm-4 .content ul li:first-child, .software-track .contain .col-sm-6 .content ul li:first-child, .software-track .contain .col-sm-4 .content ul li:first-child {
-  background-color: #2C96D1;
-  border-radius: 20px;
-}
-.power-track .contain .col-sm-6 .content .left-ul, .power-track .contain .col-sm-4 .content .left-ul, .software-track .contain .col-sm-6 .content .left-ul, .software-track .contain .col-sm-4 .content .left-ul {
-  margin-right: 60px;
-}
-.power-track .contain .col-sm-6 .content .Right-ul, .power-track .contain .col-sm-4 .content .Right-ul, .software-track .contain .col-sm-6 .content .Right-ul, .software-track .contain .col-sm-4 .content .Right-ul {
-  margin-left: 60px;
-}
-.power-track .contain .col-sm-12, .software-track .contain .col-sm-12 {
-  margin-bottom: 80px;
-}
-/* start Architecture-track */
-.Architecture-track {
-  background-image: url("../images/Copy of IMG_20191120_203813.jpg");
-}
-.Architecture-track .contain {
-  position: relative;
-  z-index: 2;
-  direction: ltr;
-  padding: 100px 0px;
-  color: #fff;
-}
-.Architecture-track .contain .col-sm-4 {
-  margin-bottom: 80px;
-}
-.Architecture-track .contain .col-sm-4 .content ul {
-  margin: 0;
-}
-.Architecture-track .contain .col-sm-4 .content ul li:first-child {
-  background-color: #2C96D1;
-  border-radius: 20px;
-}
-.Architecture-track .contain .left ul {
-  float: left;
-}
-.Architecture-track .contain .right ul {
-  float: right;
-}
-.Architecture-track .contain .col-sm-12 {
-  margin-bottom: 80px;
-}
-/* start mechanical */
-.mechanical {
-  background-image: url("../images/78582659_490739031549011_4212661721015255040_n.jpg");
-}
-
-/*
     ---- media query----
 */
 @media (max-width: 880px) {
@@ -304,20 +159,6 @@ header nav .toggel-nav label div {
     width: 100%;
     right: -100%;
   }
-
-  .power-track .contain .col-sm-6 .content .left-ul, .power-track .contain .col-sm-4 .content .left-ul, .software-track .contain .col-sm-6 .content .left-ul, .software-track .contain .col-sm-4 .content .left-ul {
-    margin-right: auto;
-  }
-  .power-track .contain .col-sm-6 .content .Right-ul, .power-track .contain .col-sm-4 .content .Right-ul, .software-track .contain .col-sm-6 .content .Right-ul, .software-track .contain .col-sm-4 .content .Right-ul {
-    margin-left: auto;
-  }
-
-  .Architecture-track .contain .col-sm-4 .content ul {
-    margin: auto;
-  }
-  .Architecture-track .contain .left ul, .Architecture-track .contain .right ul {
-    float: none;
-  }
 }
 /* footer */
 .footer {
@@ -349,7 +190,6 @@ header nav .toggel-nav label div {
 .footer p {
   font-size: 14px;
   color: #ddd;
-  margin-bottom: 0;
 }
 .footer::before {
   content: "";

@@ -149,7 +149,7 @@ header nav .toggel-nav label div {
     transform: translateY(-5px) rotate(-225deg);
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 575px) {
   header nav .logo h5 {
     margin-right: 5px;
     padding: 5;

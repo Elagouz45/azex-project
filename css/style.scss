@@ -118,6 +118,213 @@ header{
 
 
 
+/*
+    ---- start Our courses ----
+*/    
+
+        
+    .supTrack {
+        background: $secondColor;
+        width: 200px;
+        min-width:200px;
+        font-size: 20px;
+        margin: auto;
+        padding: 2px 15px;
+        padding-bottom: 2px;
+        border-radius: 5px;
+        line-height: 1.5;
+        padding-bottom: 7px;
+    }
+
+    .embedded {
+        background-size: cover;
+        text-align: center;
+        border-bottom: 3px solid $secondColor;
+        position: relative;
+    }
+    .overlay-track {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: #21669fb3;
+    }
+
+    .track-ul{
+        width: 190px;
+        min-width:190px;
+        font-size: 16px;
+        margin: auto;
+        list-style: none;
+        background-color: #2277A7D8;
+        border-radius: 8px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .track-li{
+        padding: 7px ;
+    }
+    @mixin contain {
+        position: relative;
+        z-index: 2;
+        direction: ltr;
+        padding: 100px 0px;
+        color: $defaultColor;
+    }
+
+    .embedded-1{
+        @extend .embedded;
+        background-image: url('../images/ورش العمل.jpg');
+        .overlay{
+            @extend .overlay-track;
+        }
+        .contain{
+            @include contain; 
+            .col-sm-6,.col-sm-12{
+                margin-bottom: 80px;
+                h3{
+                    @extend .supTrack;
+                }
+            }
+            
+        }
+
+    }
+
+    .embedded-2,.mechanical{
+        @extend .embedded;
+        background-image: url('../images/IMG_6238.jpg');
+        .overlay{
+            @extend .overlay-track;
+        }
+        .contain{
+            @include contain; 
+            .col-sm-6{
+                margin-bottom: 80px;
+                .content{
+                    ul{
+                        @extend .track-ul;
+                        li{
+                            @extend .track-li;
+                            &:first-child{
+                                background-color: $cc;
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-sm-12{
+                margin-bottom: 80px;
+                h3{
+                    @extend .supTrack;
+                }
+            }
+        }
+    }
+
+    /* start power track */
+    .power-track ,.software-track{
+        @extend .embedded;
+        background-image: url('../images/ورش العمل.jpg');
+        .overlay{
+            @extend .overlay-track;
+        }
+        .contain{
+            @include contain; 
+            .col-sm-6,.col-sm-4{
+                margin-bottom: 80px;
+                .content{
+                    ul{
+                        @extend .track-ul;
+                        li{
+                            @extend .track-li;
+                            &:first-child{
+                                background-color: $cc;
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                    .left-ul{
+                        margin-right: 60px;
+                    }
+                    .Right-ul{
+                        margin-left: 60px;
+                    }
+                }
+            }
+            .col-sm-12{
+                margin-bottom: 80px;
+                h3{
+                    @extend .supTrack;
+                }
+            }
+            
+        }
+    }
+
+
+    /* start Architecture-track */
+    
+    .Architecture-track{
+        @extend .embedded;
+        background-image: url('../images/Copy of IMG_20191120_203813.jpg');
+        .overlay{
+            @extend .overlay-track;
+        }
+        .contain{
+            @include contain; 
+            .col-sm-4{
+                margin-bottom: 80px;
+                .content{
+                    ul{
+                        @extend .track-ul;
+                        margin: 0;
+                        li{
+                            @extend .track-li;
+                            &:first-child{
+                                background-color: $cc;
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .left{
+                ul{
+                    float: left;
+                }
+            }
+            .right{
+                ul{
+                    float: right;
+                }
+            }
+            .col-sm-12{
+                margin-bottom: 80px;
+                h3{
+                    @extend .supTrack;
+                }
+            }
+            
+        }
+    }
+
+    /* start mechanical */
+    .mechanical{
+        background-image: url('../images/78582659_490739031549011_4212661721015255040_n.jpg');
+    }
+
+
+  
+
+
+
+
+
+
 
 /*
     ---- media query----
@@ -200,6 +407,40 @@ header{
 
         }
     }
+
+    .power-track ,.software-track{
+        .contain{
+            .col-sm-6,.col-sm-4{
+                .content{
+                    .left-ul{
+                        margin-right: auto;
+                    }
+                    .Right-ul{
+                        margin-left: auto;
+                    }
+                }
+            }
+            
+        }
+ 
+    }
+
+    .Architecture-track{
+        .contain{
+            .col-sm-4{
+                .content{
+                    ul{
+                        margin: auto;
+                    }
+                }
+            }
+            .left , .right{
+                ul{
+                    float: none;
+                }
+            }
+        }
+    }  
 
 }
 

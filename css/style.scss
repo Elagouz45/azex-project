@@ -1,133 +1,120 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     direction: rtl;
 }
-body{
-    background-color: #eee;
-    overflow-x:hidden ;
-}
-$mainColor:#2276A7;
-$thiredColor:#082740;
-$cc:#2C96D1;
-$secondColor:#EEC65A;
-$defaultColor:#fff;
+// header style
+$mainColor: #2276a7;
+$thiredColor: #082740;
+$cc: #2c96d1;
+$secondColor: #eec65a;
+$defaultColor: #fff;
 
-header{
-    background: transparent linear-gradient(91deg, #082740 0%, $mainColor 63%, #2C96D1 100%) 0% 0% no-repeat padding-box;
+header {
+    background: transparent linear-gradient(91deg, #082740 0%, $mainColor 63%, #2c96d1 100%) 0% 0% no-repeat padding-box;
     height: 100px;
     padding: 20px;
     width: 100%;
-    color:$defaultColor;
+    color: $defaultColor;
     border-bottom: 3px solid $secondColor;
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
-        .logo{
-            img{
+        .logo {
+            img {
                 width: 60px;
                 height: 60px;
                 vertical-align: middle;
             }
-            h5{
+            h5 {
                 display: inline-block;
-                padding: 10px ;
+                padding: 10px;
                 padding-bottom: 12px;
                 font-size: 13px;
                 margin-right: 2px;
                 border-right: 2px solid $defaultColor;
             }
-
         }
 
-        .list{
+        .list {
             display: flex;
             align-items: center;
-            ul{
+            ul {
                 margin-bottom: 0;
-                li{
+                li {
                     display: inline-block;
                     list-style: none;
                     margin: 0 15px;
                     font-size: 14px;
-                    p{
+                    p {
                         display: none;
                         margin: 0;
                     }
-                    .card{
-                        background:$secondColor;
+                    .card {
+                        background: $secondColor;
                         padding: 10px 0px;
                         margin-top: 10px;
-                        a{
+                        a {
                             color: $defaultColor;
-                            display:block;
+                            display: block;
                             padding-bottom: 7px;
                             border-bottom: 1px solid #adaaaa;
-                            margin:0px 15px 10px;
+                            margin: 0px 15px 10px;
 
-                            &:last-child{
+                            &:last-child {
                                 border: 0;
                                 padding-bottom: 0;
                                 margin-bottom: 0;
-
                             }
                         }
                     }
-                    a{
+                    a {
                         text-decoration: none;
                         color: $defaultColor;
                     }
                     .dropdown {
-                        .dropdown-menu{
+                        .dropdown-menu {
                             min-width: 100%;
                             background-color: $mainColor;
-                            .dropdown-item{
-                                color:  $defaultColor ;
+                            .dropdown-item {
+                                color: $defaultColor;
                                 text-align: center;
                                 font-size: 12px;
-                                padding: .25rem .1rem;
-                                &:hover{
+                                padding: 0.25rem 0.1rem;
+                                &:hover {
                                     color: $mainColor !important;
                                 }
-
                             }
                         }
-                        
                     }
                 }
             }
         }
-        .toggel-nav{
+        .toggel-nav {
             display: none;
-            label{
+            label {
                 margin-top: 15px;
-                div{
+                div {
                     width: 30px;
                     height: 5px;
                     margin-bottom: 5px;
-                    background: #eee;  
-                    transition: .5s;                 
+                    background: #eee;
+                    transition: 0.5s;
                 }
             }
         }
-
     }
 }
 
-
-
-
-
 /*
-    ---- media query----
+    ---- media query for header----
 */
 
-
-@media(max-width:880px){
-    header{
-        nav{
-            .list{
+@media (max-width: 880px) {
+    header {
+        nav {
+            .list {
                 position: fixed;
                 top: 100px;
                 right: -70%;
@@ -137,8 +124,8 @@ header{
                 width: 70%;
                 transition: 1s all;
                 z-index: 999;
-                background:linear-gradient(91deg, $thiredColor 0%, $mainColor 63%, $cc 100%); 
-                ul{
+                background: linear-gradient(91deg, $thiredColor 0%, $mainColor 63%, $cc 100%);
+                ul {
                     text-align: center;
                     flex-direction: column;
                     justify-content: space-around;
@@ -147,33 +134,33 @@ header{
                     padding: 20px 0px;
                     display: flex;
                     overflow: auto;
-                    li{
-                        .dropdown{
+                    li {
+                        .dropdown {
                             display: none;
                         }
-                        p{
+                        p {
                             display: block;
                         }
                     }
                 }
             }
-            .toggel-nav{
+            .toggel-nav {
                 display: block;
             }
-            :checked ~ .list{
+            :checked ~ .list {
                 display: block;
                 right: 0;
             }
 
-            :checked ~ .toggel-nav{
-                label{
-                    div:first-child{
+            :checked ~ .toggel-nav {
+                label {
+                    div:first-child {
                         transform: translateY(5px) rotate(225deg);
                     }
-                    div:nth-child(2){
+                    div:nth-child(2) {
                         display: none;
                     }
-                    div:nth-child(3){
+                    div:nth-child(3) {
                         transform: translateY(-5px) rotate(-225deg);
                     }
                 }
@@ -182,32 +169,298 @@ header{
     }
 }
 
-
-@media(max-width:575px){
-    header{
-        nav{
-            .logo{
-                h5{
+@media (max-width: 575px) {
+    header {
+        nav {
+            .logo {
+                h5 {
                     margin-right: 5px;
                     padding: 5;
                     font-size: 10px;
-                } 
+                }
             }
-            .list{
+            .list {
                 width: 100%;
                 right: -100%;
             }
+        }
+    }
+}
 
+// Start Global Rules for styling page content
+// Global Variables
+$main-color: #eec65a;
+$basic-color: white;
+$overlay-color: #21669fb3;
+
+// Global placeholder selectors
+// for styling overlay
+%overlay-style {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    opacity: 0.8;
+    background-color: $overlay-color;
+}
+
+// for styling the border before sections
+%border-top {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    z-index: 1;
+    background-color: $main-color;
+}
+
+// for global styling of competition’s classes
+%about-competition {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    text-align: center;
+}
+
+// for styling image in competitions classes
+%competition-image {
+    border-radius: 20px;
+    width: 100%;
+    height: 220px;
+}
+
+// for styling titlt of competition
+%competition-name {
+    margin-top: 10px;
+    color: $basic-color;
+    font-size: 18px;
+}
+
+// Global Mixins
+// for styling the section background
+@mixin background-style($height, $background-image-name) {
+    width: 100%;
+    height: $height;
+    position: relative;
+    background: url(../images/#{$background-image-name}.jpeg) no-repeat;
+    background-size: 100% 100%;
+    .overlay {
+        @extend %overlay-style;
+    }
+}
+
+// Global Loops
+// for styling these classes (ceremony-image, courses-image, closing-image)
+@each $class-name, $left-value in (ceremony, 8%), (courses, 55%), (closing, 8%) {
+    .#{$class-name}-image {
+        position: absolute;
+        top: 170px;
+        left: $left-value;
+        z-index: 1;
+        width: 35%;
+        height: 350px;
+        overflow: hidden;
+        img {
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// for styling these classes (about-ceremony, about-courses, about-closing)
+@each $class-name, $margin-left, $margin-right, $padding-top, $width in (ceremony, 50%, 10%, 200px, 26%),
+    (courses, 5%, 55%, 260px, 35.5%), (closing, 50%, 10%, 200px, 52%)
+{
+    .about-#{$class-name} {
+        overflow: hidden;
+        margin-left: $margin-left;
+        margin-right: $margin-right;
+        padding-top: $padding-top;
+        text-align: right;
+        position: relative;
+        z-index: 1;
+    }
+    .#{$class-name} {
+        width: $width;
+        color: $basic-color;
+        font-size: 22px;
+        border-radius: 10px;
+        padding: 0px 5px 5px;
+        background-color: $main-color;
+        overflow: hidden;
+    }
+    .#{$class-name}-details {
+        color: $basic-color;
+        line-height: 1.8;
+        font-size: 18px;
+        margin-top: 20px;
+        overflow: hidden;
+        a {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
+
+// for styling these classes (sapiq-and-lahiq-competition, programming-competition, architectural-show-competition)
+@each $competition-name, $left in (sapiq-and-lahiq, 8%), (programming, 39%), (architectural-show, 70%) {
+    .#{$competition-name}-competition {
+        @extend %about-competition;
+        left: $left;
+        margin: 150px 0px;
+        img {
+            @extend %competition-image;
+        }
+        .competition-name {
+            @extend %competition-name;
+        }
+    }
+}
+
+@each $class-name, $left in (visitors, 22%), (projects, 58%) {
+    .about-#{$class-name} {
+        @extend %about-competition;
+        left: $left;
+        margin-top: 450px;
+        img {
+            @extend %competition-image;
+        }
+        .title {
+            @extend %competition-name;
+        }
+    }
+}
+// end Global Rules
+
+.team-events-page {
+    .opening-ceremony {
+        @include background-style(650px, opening-ceremony);
+    }
+
+    .our-educational-courses {
+        @include background-style(700px, our-educational-courses);
+        &::before {
+            @extend %border-top;
+        }
+    }
+    .closing-ceremony {
+        @include background-style(1300px, closing-ceremony);
+        &::before {
+            @extend %border-top;
+        }
+        .competitions-examples {
+            padding: 20px 2%;
         }
     }
 
+    // Responsive Design
+    // Small Screens
+    @media (max-width: 767px) {
+        @each $class-name, $height in (opening-ceremony, 500px), (our-educational-courses, 500px),
+            (closing-ceremony, 1700px)
+        {
+            .#{$class-name} {
+                width: 100%;
+                height: $height;
+                position: relative;
+                background: url(../images/#{$class-name}.jpeg) no-repeat;
+                background-size: 100% 100%;
+                .overlay {
+                    @extend %overlay-style;
+                }
+            }
+        }
+        @each $class-name, $width in (ceremony, 100px), (courses, 140px), (closing, 200px) {
+            .#{$class-name}-image {
+                display: none;
+            }
+            .about-#{$class-name} {
+                top: -80px;
+                margin-left: 10%;
+                margin-right: 10%;
+                overflow: hidden;
+                text-align: center;
+                width: 80%;
+                display: block;
+            }
+            .#{$class-name} {
+                width: $width;
+                font-size: 18px;
+            }
+            .#{$class-name}-details {
+                font-size: 16px;
+            }
+        }
+        .competitions-examples {
+            @each $competition-name, $top in (sapiq-and-lahiq, 200px), (programming, 470px), (architectural-show, 740px),
+                (visitors, 720px), (projects, 990px)
+            {
+                .#{$competition-name}-competition,
+                .about-#{$competition-name} {
+                    overflow: hidden;
+                    position: absolute;
+                    left: 20%;
+                    top: $top;
+                    z-index: 1;
+                    width: 60%;
+                    text-align: center;
+                    display: block;
+                    img {
+                        text-align: center;
+                        width: 100% !important;
+                        height: 180px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Medium Screens
+    @media (min-width: 768px) and (max-width: 992px) {
+        @each $class-name, $width in (ceremony, 108px), (courses, 150px), (closing, 210px) {
+            .#{$class-name}-image {
+                height: 270px;
+            }
+            .about-#{$class-name} {
+                top: -30px;
+                overflow: hidden;
+                display: block;
+            }
+            .#{$class-name} {
+                width: $width;
+                font-size: 20px;
+            }
+            .#{$class-name}-details {
+                font-size: 17px;
+            }
+        }
+        .competitions-examples {
+            margin-top: -60px;
+            img {
+                height: 150px;
+            }
+        }
+    }
+
+    // Large Screens
+    @media (min-width: 993px) {
+        @each $class-name, $width in (ceremony, 120px), (courses, 164px), (closing, 230px) {
+            .#{$class-name} {
+                width: $width;
+                margin-top: -24px;
+            }
+        }
+        .competitions-examples {
+            margin-top: 80px;
+        }
+    }
 }
-
-
-
+/* end page content style*/
 
 /* footer */
-
 .footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
@@ -228,7 +481,7 @@ header{
                 a {
                     text-decoration: none;
                     position: relative;
-                    bottom: 1.5px;
+                    bottom: 1.8px;
                     i {
                         font-size: 12px;
                         color: #ddd;
@@ -290,15 +543,3 @@ header{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

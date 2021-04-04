@@ -5,18 +5,13 @@
   direction: rtl;
 }
 
-body {
-  background-color: #eee;
-  overflow-x: hidden;
-}
-
 header {
-  background: transparent linear-gradient(91deg, #082740 0%, #2276A7 63%, #2C96D1 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(91deg, #082740 0%, #2276a7 63%, #2c96d1 100%) 0% 0% no-repeat padding-box;
   height: 100px;
   padding: 20px;
   width: 100%;
   color: #fff;
-  border-bottom: 3px solid #EEC65A;
+  border-bottom: 3px solid #eec65a;
 }
 header nav {
   display: flex;
@@ -53,7 +48,7 @@ header nav .list ul li p {
   margin: 0;
 }
 header nav .list ul li .card {
-  background: #EEC65A;
+  background: #eec65a;
   padding: 10px 0px;
   margin-top: 10px;
 }
@@ -75,7 +70,7 @@ header nav .list ul li a {
 }
 header nav .list ul li .dropdown .dropdown-menu {
   min-width: 100%;
-  background-color: #2276A7;
+  background-color: #2276a7;
 }
 header nav .list ul li .dropdown .dropdown-menu .dropdown-item {
   color: #fff;
@@ -84,7 +79,7 @@ header nav .list ul li .dropdown .dropdown-menu .dropdown-item {
   padding: 0.25rem 0.1rem;
 }
 header nav .list ul li .dropdown .dropdown-menu .dropdown-item:hover {
-  color: #2276A7 !important;
+  color: #2276a7 !important;
 }
 header nav .toggel-nav {
   display: none;
@@ -101,7 +96,7 @@ header nav .toggel-nav label div {
 }
 
 /*
-    ---- media query----
+    ---- media query for header----
 */
 @media (max-width: 880px) {
   header nav .list {
@@ -114,7 +109,7 @@ header nav .toggel-nav label div {
     width: 70%;
     transition: 1s all;
     z-index: 999;
-    background: linear-gradient(91deg, #082740 0%, #2276A7 63%, #2C96D1 100%);
+    background: linear-gradient(91deg, #082740 0%, #2276a7 63%, #2c96d1 100%);
   }
   header nav .list ul {
     text-align: center;
@@ -160,6 +155,467 @@ header nav .toggel-nav label div {
     right: -100%;
   }
 }
+.team-events-page .closing-ceremony .overlay, .team-events-page .our-educational-courses .overlay, .team-events-page .opening-ceremony .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  opacity: 0.8;
+  background-color: #21669fb3;
+}
+
+.team-events-page .closing-ceremony::before, .team-events-page .our-educational-courses::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  z-index: 1;
+  background-color: #eec65a;
+}
+
+.about-projects, .about-visitors, .architectural-show-competition, .programming-competition, .sapiq-and-lahiq-competition {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  text-align: center;
+}
+
+.about-projects img, .about-visitors img, .architectural-show-competition img, .programming-competition img, .sapiq-and-lahiq-competition img {
+  border-radius: 20px;
+  width: 100%;
+  height: 220px;
+}
+
+.about-projects .title, .about-visitors .title, .architectural-show-competition .competition-name, .programming-competition .competition-name, .sapiq-and-lahiq-competition .competition-name {
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.ceremony-image {
+  position: absolute;
+  top: 170px;
+  left: 8%;
+  z-index: 1;
+  width: 35%;
+  height: 350px;
+  overflow: hidden;
+}
+.ceremony-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.courses-image {
+  position: absolute;
+  top: 170px;
+  left: 55%;
+  z-index: 1;
+  width: 35%;
+  height: 350px;
+  overflow: hidden;
+}
+.courses-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.closing-image {
+  position: absolute;
+  top: 170px;
+  left: 8%;
+  z-index: 1;
+  width: 35%;
+  height: 350px;
+  overflow: hidden;
+}
+.closing-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.about-ceremony {
+  overflow: hidden;
+  margin-left: 50%;
+  margin-right: 10%;
+  padding-top: 200px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+.ceremony {
+  width: 26%;
+  color: white;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 0px 5px 5px;
+  background-color: #eec65a;
+  overflow: hidden;
+}
+
+.ceremony-details {
+  color: white;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.ceremony-details a {
+  color: #eec65a;
+  text-decoration: none;
+}
+
+.about-courses {
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 55%;
+  padding-top: 260px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+.courses {
+  width: 35.5%;
+  color: white;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 0px 5px 5px;
+  background-color: #eec65a;
+  overflow: hidden;
+}
+
+.courses-details {
+  color: white;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.courses-details a {
+  color: #eec65a;
+  text-decoration: none;
+}
+
+.about-closing {
+  overflow: hidden;
+  margin-left: 50%;
+  margin-right: 10%;
+  padding-top: 200px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+.closing {
+  width: 52%;
+  color: white;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 0px 5px 5px;
+  background-color: #eec65a;
+  overflow: hidden;
+}
+
+.closing-details {
+  color: white;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.closing-details a {
+  color: #eec65a;
+  text-decoration: none;
+}
+
+.sapiq-and-lahiq-competition {
+  left: 8%;
+  margin: 150px 0px;
+}
+.programming-competition {
+  left: 39%;
+  margin: 150px 0px;
+}
+.architectural-show-competition {
+  left: 70%;
+  margin: 150px 0px;
+}
+.about-visitors {
+  left: 22%;
+  margin-top: 450px;
+}
+.about-projects {
+  left: 58%;
+  margin-top: 450px;
+}
+.team-events-page .opening-ceremony {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  background: url(../images/opening-ceremony.jpeg) no-repeat;
+  background-size: 100% 100%;
+}
+.team-events-page .our-educational-courses {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background: url(../images/our-educational-courses.jpeg) no-repeat;
+  background-size: 100% 100%;
+}
+.team-events-page .closing-ceremony {
+  width: 100%;
+  height: 1300px;
+  position: relative;
+  background: url(../images/closing-ceremony.jpeg) no-repeat;
+  background-size: 100% 100%;
+}
+.team-events-page .closing-ceremony .competitions-examples {
+  padding: 20px 2%;
+}
+@media (max-width: 767px) {
+  .team-events-page .opening-ceremony {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url(../images/opening-ceremony.jpeg) no-repeat;
+    background-size: 100% 100%;
+  }
+  .team-events-page .our-educational-courses {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url(../images/our-educational-courses.jpeg) no-repeat;
+    background-size: 100% 100%;
+  }
+  .team-events-page .closing-ceremony {
+    width: 100%;
+    height: 1700px;
+    position: relative;
+    background: url(../images/closing-ceremony.jpeg) no-repeat;
+    background-size: 100% 100%;
+  }
+  .team-events-page .ceremony-image {
+    display: none;
+  }
+  .team-events-page .about-ceremony {
+    top: -80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+    display: block;
+  }
+  .team-events-page .ceremony {
+    width: 100px;
+    font-size: 18px;
+  }
+  .team-events-page .ceremony-details {
+    font-size: 16px;
+  }
+  .team-events-page .courses-image {
+    display: none;
+  }
+  .team-events-page .about-courses {
+    top: -80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+    display: block;
+  }
+  .team-events-page .courses {
+    width: 140px;
+    font-size: 18px;
+  }
+  .team-events-page .courses-details {
+    font-size: 16px;
+  }
+  .team-events-page .closing-image {
+    display: none;
+  }
+  .team-events-page .about-closing {
+    top: -80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+    display: block;
+  }
+  .team-events-page .closing {
+    width: 200px;
+    font-size: 18px;
+  }
+  .team-events-page .closing-details {
+    font-size: 16px;
+  }
+  .team-events-page .competitions-examples .sapiq-and-lahiq-competition,
+.team-events-page .competitions-examples .about-sapiq-and-lahiq {
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    top: 200px;
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    display: block;
+  }
+  .team-events-page .competitions-examples .sapiq-and-lahiq-competition img,
+.team-events-page .competitions-examples .about-sapiq-and-lahiq img {
+    text-align: center;
+    width: 100% !important;
+    height: 180px;
+  }
+  .team-events-page .competitions-examples .programming-competition,
+.team-events-page .competitions-examples .about-programming {
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    top: 470px;
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    display: block;
+  }
+  .team-events-page .competitions-examples .programming-competition img,
+.team-events-page .competitions-examples .about-programming img {
+    text-align: center;
+    width: 100% !important;
+    height: 180px;
+  }
+  .team-events-page .competitions-examples .architectural-show-competition,
+.team-events-page .competitions-examples .about-architectural-show {
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    top: 740px;
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    display: block;
+  }
+  .team-events-page .competitions-examples .architectural-show-competition img,
+.team-events-page .competitions-examples .about-architectural-show img {
+    text-align: center;
+    width: 100% !important;
+    height: 180px;
+  }
+  .team-events-page .competitions-examples .visitors-competition,
+.team-events-page .competitions-examples .about-visitors {
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    top: 720px;
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    display: block;
+  }
+  .team-events-page .competitions-examples .visitors-competition img,
+.team-events-page .competitions-examples .about-visitors img {
+    text-align: center;
+    width: 100% !important;
+    height: 180px;
+  }
+  .team-events-page .competitions-examples .projects-competition,
+.team-events-page .competitions-examples .about-projects {
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    top: 990px;
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    display: block;
+  }
+  .team-events-page .competitions-examples .projects-competition img,
+.team-events-page .competitions-examples .about-projects img {
+    text-align: center;
+    width: 100% !important;
+    height: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .team-events-page .ceremony-image {
+    height: 270px;
+  }
+  .team-events-page .about-ceremony {
+    top: -30px;
+    overflow: hidden;
+    display: block;
+  }
+  .team-events-page .ceremony {
+    width: 108px;
+    font-size: 20px;
+  }
+  .team-events-page .ceremony-details {
+    font-size: 17px;
+  }
+  .team-events-page .courses-image {
+    height: 270px;
+  }
+  .team-events-page .about-courses {
+    top: -30px;
+    overflow: hidden;
+    display: block;
+  }
+  .team-events-page .courses {
+    width: 150px;
+    font-size: 20px;
+  }
+  .team-events-page .courses-details {
+    font-size: 17px;
+  }
+  .team-events-page .closing-image {
+    height: 270px;
+  }
+  .team-events-page .about-closing {
+    top: -30px;
+    overflow: hidden;
+    display: block;
+  }
+  .team-events-page .closing {
+    width: 210px;
+    font-size: 20px;
+  }
+  .team-events-page .closing-details {
+    font-size: 17px;
+  }
+  .team-events-page .competitions-examples {
+    margin-top: -60px;
+  }
+  .team-events-page .competitions-examples img {
+    height: 150px;
+  }
+}
+@media (min-width: 993px) {
+  .team-events-page .ceremony {
+    width: 120px;
+    margin-top: -24px;
+  }
+  .team-events-page .courses {
+    width: 164px;
+    margin-top: -24px;
+  }
+  .team-events-page .closing {
+    width: 230px;
+    margin-top: -24px;
+  }
+  .team-events-page .competitions-examples {
+    margin-top: 80px;
+  }
+}
+
+/* end page content style*/
 /* footer */
 .footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -181,7 +637,7 @@ header nav .toggel-nav label div {
 .footer .social-media ul li a {
   text-decoration: none;
   position: relative;
-  bottom: 1.5px;
+  bottom: 1.8px;
 }
 .footer .social-media ul li a i {
   font-size: 12px;

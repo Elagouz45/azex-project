@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+
+
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        </ol>
+
+
+
+
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>الأخبار</h3>
+                <p>ﻓﺮﻳـﻖ "ﻣﻌﺮض اﻷزﻫـﺮ ﻟﻠﺘﻄﺒـﻴﻘﺎت اﻟﻬﻨﺪﺳـﻴﺔ" ﻧﺸﺎط ﻃﻼﺑﻲ وﺣﺪث ﻋﻠﻤﻰ ﺿﺨﻢ ﻏﻴﺮ ﻫﺎدف ﻟﻠﺮﺑﺢ ﻳﻬﺪف ﺑﺸﻜﻞ اﺳﺎﺳﻰ ﻻﻋﺪاد ﻣﻬﻨﺪس ﻣﺒﺘﻜﺮ ﻣﺒﺪع وذﻟﻚ ﻋﻦ ﻃﺮﻳﻖ ﺳﺪ اﻟﻔﺠﻮه ﺑﻴﻦ اﻟﺠﺎﻧﺐ اﻟﻌﻤﻠﻰ واﻟﻨﻈﺮى ﻣﻦ ﺧﻼل ﻣﻌﺮض ﻫﻨﺪﺳﻰ ﺿﺨﻢ
+                   <span id="dots" onclick="readMore()">…</span>
+                   <span id="more">
+                    ﻛﻞ ﻋﺎم ﻣﺴﺒﻮق بدورات وورش ﻋﻤﻞ ﻫﻨﺪﺳﻴﻪ ﻓﻰ ﻣﺨﺘﻠﻒ اﻟﻤﺠﺎﻻت اﻟﻬﻨﺪﺳﻴﺔ ﺑﻜﻠﻴـﺔ اﻟﻬﻨـﺪﺳـﺔ ﺟﺎﻣﻌﺔ١٩٩٩ أﺳﺴﻪ .... اﺣﻤﺪ ﺻﻔﻮت رﺣﻤﻪ اﻟﻠﻪ ﻋﺎم اﻷزﻫﺮ ﺣﻴﺚ ﻛﺎن رﺋﻴﺴًﺎ ﻟﻘﺴﻢ اﻟﻬﻨﺪﺳﺔ اﻟﻜﻬﺮﺑﻴﺔ ﻓﻰ ذﻟﻚ اﻟﻮﻗﺖ
+                  </span>
+                </p>
+                <a href="#">التفاصيل</a>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>عن الفريق</h3>
+                <p>ﻓﺮﻳـﻖ "ﻣﻌﺮض اﻷزﻫـﺮ ﻟﻠﺘﻄﺒـﻴﻘﺎت اﻟﻬﻨﺪﺳـﻴﺔ" ﻧﺸﺎط ﻃﻼﺑﻲ وﺣﺪث ﻋﻠﻤﻰ ﺿﺨﻢ ﻏﻴﺮ ﻫﺎدف ﻟﻠﺮﺑﺢ ﻳﻬﺪف ﺑﺸﻜﻞ اﺳﺎﺳﻰ لإﻋﺪاد ﻣﻬﻨﺪس ﻣﺒﺘﻜﺮ ﻣﺒﺪع وذﻟﻚ ﻋﻦ ﻃﺮﻳﻖ ﺳﺪ اﻟﻔﺠﻮه ﺑﻴﻦ اﻟﺠﺎﻧﺐ اﻟﻌﻤﻠﻰ واﻟﻨﻈﺮى ﻣﻦ ﺧﻼل ﻣﻌﺮض ﻫﻨﺪﺳﻰ ﺿﺨﻢ
+                  <span id="dots2" onclick="readMore2()"> …</span>
+                  <span id="more2">
+                    ﻛﻞ ﻋﺎم ﻣﺴﺒﻮق دورات وورش ﻋﻤﻞ ﻫﻨﺪﺳﻴﻪ ﻓﻰ ﻣﺨﺘﻠﻒ اﻟﻤﺠﺎﻻت اﻟﻬﻨﺪﺳﻴﺔ ﺑﻜﻠﻴـﺔ اﻟﻬﻨـﺪﺳـﺔ ﺟﺎﻣﻌﺔ١٩٩٩ أﺳﺴﻪ .... اﺣﻤﺪ ﺻﻔﻮت رﺣﻤﻪ اﻟﻠﻪ ﻋﺎم اﻷزﻫﺮ ﺣﻴﺚ ﻛﺎن رﺋﻴﺴًﺎ ﻟﻘﺴﻢ اﻟﻬﻨﺪﺳﺔ اﻟﻜﻬﺮﺑﻴﺔ ﻓﻰ ذﻟﻚ اﻟﻮﻗﺖ
+                  </span>
+                </p>
+                <a href="#">التفاصيل</a>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>أحداث الفريق</h3>
+                <p>يقوم الفريق بإقامة العديد من الأحداث خلال العام الدراسي أولها هو الحفل الإفتتاحي حيث يحضره ما يزيد عن ألف طالب من الأقسام الهندسية المختلفة تتمثل فعاليات هذا الحدث بتعريف الطلاب بمحتوي العام والدورات وورش العمل والمعرض بالإضافه إلي ذالك نقدم بعض المحاضرات الأكاديمية التي يلقيها أصحاب الخبرة في المجالات
+                  <span id="dots3" onclick="readMore3()">…</span>
+                  <span id="more3">
+                  الهندسية المختلفة حتي يكون الطالب علي دراية كاملة بأحدث تطورات سوق العمل اُقيمت فعاليات افتتاح
+                  </span>
+                </p>
+                <a href="#">التفاصيل</a>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>دوراتنا التعليمية</h3>
+                <p>ورش عمل ودبلومات يتم فيها شرح المادة العلمية بطريقة مبسطة وبنهايتها يتم عمل مشروع كتطبيق عملي على ما تم شرحه</p>
+                <a href="#">التفاصيل</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
